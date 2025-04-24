@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamburgueria - Bem-vindo!</title>
+    <title>Novidades</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,13 +25,34 @@
             </nav>
         </div>
     </header>
-    <main>
-        <section>
-            <h1>Bem-vindo à nossa Hamburgueria!</h1>
-            <p>Descubra os melhores hambúrgueres feitos com paixão e ingredientes frescos.</p>
-            <img src="hamburguer.jpg" alt="Hambúrguer delicioso">
-        </section>
+      
+    <main class="novidades">
+        <div class="container">
+              <h1>Confira as Novidades do Mc Cria's!</h1>
+          
+              <?php
+              include 'conexao.php';
+          
+              $sql = "SELECT resumo, descricao FROM novidades";
+              $result = $conn->query($sql);
+          
+              if ($result->num_rows > 0) {
+                  while($row = $result->fetch_assoc()) {
+                      echo "<div class='novidade'>";
+                      echo "<h2>" . $row["resumo"] . "</h2>";
+                      echo "<p>" . $row["descricao"] . "</p>";
+                      echo "</div>";
+                  }
+              } else {
+                  echo "<p>Não temos novidades no momento!</p>";
+              }
+          
+              $conn->close();
+              ?>    
+        </div>
     </main>
+      
+      
     <footer>
         <p>&copy; 2025 Hamburgueria. Todos os direitos reservados.</p>
     </footer>
