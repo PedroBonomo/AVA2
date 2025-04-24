@@ -4,26 +4,6 @@ body {
     padding: 0;
 }
 
-header nav ul {
-    display: flex;
-    list-style-type: none;
-    background-color: #333;
-}
-
-header nav ul li {
-    padding: 10px;
-}
-
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
 footer {
     text-align: center;
     background: #333;
@@ -31,8 +11,139 @@ footer {
     padding: 10px 0;
 }
 
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-    }
+.sidebar {
+    width: 100%;
+    box-sizing: border-box; 
+    overflow-x: hidden;    
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 100px;
+  }
+  
+
+.sidebar .logo img {
+  height: 150px;
+  width: auto;
 }
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+  color: #931517;
+}
+
+.menu ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background-color: #931517;
+  transition: width 0.3s ease;
+}
+
+.menu ul li a:hover::after {
+  width: 100%;
+}
+
+/* =============== SOBRE ================= */
+
+  .sobre-conteudo {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .quemsomos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    background-color: #931517;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  }
+  
+  .foto-somos img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+  }
+  
+  .texto-somos {
+    flex: 1;
+    color: #ffffff;
+  }
+  
+  .texto-somos h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .nossajornada, .curiosidades, .galeria {
+    color: #000000;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  .nossajornada h2,
+  .curiosidades h2,
+  .galeria h2 {
+    margin-bottom: 15px;
+  }
+  
+  .nossajornada ul, .curiosidades ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nossajornada li,
+  .curiosidades li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1.05rem;
+  }
+  
+  .galeria .grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .galeria img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  .grid-galeria img:hover {
+    transform: scale(1.05);
+  }
