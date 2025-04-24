@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+  <html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sobre - McCria's</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="Sobre">
+    <div class="sidebar">
+      <div class="logo">
+        <a href="index.html"><img src="img/logo.png" alt="Logo McCria's"></a>  
+      </div>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="novidades.html">Novidades</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  
+    <main class="sobre-conteudo">
+
+    <section class="quemsomos">
+        <div class="foto-somos">
+        <img src="img/.png" alt="Foto?" />
+        </div>  
+        <div class="texto-somos">
+        <h1>Quem Somos?</h1>
+        <p>
+            X.<br> <br>
+            X.<br> <br>
+            X.<br> <br>
+        </p>
+        </div>
+    </section>
+  
+    <section class="nossajornada">
+        <h2>Nossa Jornada</h2>
+        <ul>
+        <li><strong>Ano X:</strong> X</li>
+        <li><strong>Ano X:</strong> X</li>
+        <li><strong>Ano X:</strong> X</li>
+        <li><strong>Ano X:</strong> X</li>
+        <li><strong>Ano X:</strong> X</li>
+        <li><strong>Ano X:</strong> X</li>
+        </ul>
+    </section>
+    
+    <section class="curiosidades">
+        <h2>X</h2>
+        <ul>
+        <li>X:</li>
+        <li>X:</li>
+        <li>X:</li>
+        <li>X:</li>
+        </ul>
+    </section>
+    
+        <section class="galeria">
+            <h2>Nossa Equipe</h2>
+            <div class="grid-galeria">
+            <img src="img/equipe.png" alt="Imagem de Caio"></a>
+            <img src="img/equipe.png" alt="Imagem de Natha"></a>
+            <img src="img/equipe.png" alt="Imagem de Pedro"></a>
+            <img src="img/equipe.png" alt="Imagem de Silvana"></a>
+            </div>
+        </section>
+        </main>
+  
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 McCria's Hamburguers. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+  </html>

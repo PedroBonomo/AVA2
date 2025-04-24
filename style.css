@@ -1,4 +1,4 @@
-/*========== GERAL ==========*/
+/* =============== GERAL ================= */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -61,7 +61,89 @@ footer {
     padding: 10px 0;
 }
 
-/*========== NOVIDADE ==========*/
+/* =============== SOBRE ================= */
+.sobre-conteudo {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  
+  .quemsomos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 40px;
+    background-color: #931517;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  }
+  
+  .foto-somos img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #fff;
+  }
+  
+  .texto-somos {
+    flex: 1;
+    color: #ffffff;
+  }
+  
+  .texto-somos h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .nossajornada, .curiosidades, .galeria {
+    color: #000000;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  }
+  
+  .nossajornada h2,
+  .curiosidades h2,
+  .galeria h2 {
+    margin-bottom: 15px;
+  }
+  
+  .nossajornada ul, .curiosidades ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nossajornada li,
+  .curiosidades li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1.05rem;
+  }
+  
+  .galeria .grid-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .galeria img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+  }
+  
+  .grid-galeria img:hover {
+    transform: scale(1.05);
+  }
+
+/* =============== NOVIDADE ================= */
 .novidades h1{
     justify-self: center;
     color: #CA1316;
@@ -85,8 +167,7 @@ footer {
     transform: scale(1.02);
 }
 
-
-/*========== Responsivo ==========*/
+/* =============== RESPONSIVO ================= */
 @media (max-width: 768px) {
     .menu ul {
         flex-direction: column;
