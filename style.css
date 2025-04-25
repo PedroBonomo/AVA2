@@ -1,176 +1,245 @@
 /* =============== GERAL ================= */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #000;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .cabecalho {
-    width: 100%;
-    height: 130px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
 }
 
 .logo {
-    padding: 20px;
+  padding: 20px;
 }
 
 .logo img {
-    max-width: 120px;
-    width: 100%;
-    height: auto;
+  max-width: 120px;
+  width: 100%;
+  height: auto;
 }
 
 .menu ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-    padding-right: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  padding-right: 20px;
 }
 
 .menu ul li {
-    padding: 10px 15px;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
 
 .menu ul li:hover {
-    background-color: #931517;
+  background-color: #931517;
 }
 
 .menu ul li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
 footer {
-    text-align: center;
-    background: #000;
-    color: white;
-    padding: 10px 0;
+  text-align: center;
+  background: #000;
+  color: white;
+  padding: 10px 0;
 }
 
 /* =============== SOBRE ================= */
 .sobre-conteudo {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
-  }
-  
-  .quemsomos {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 40px;
-    background-color: #931517;
-    padding: 30px;
-    border-radius: 16px;
-    box-shadow: 0 0 12px rgba(0,0,0,0.1);
-  }
-  
-  .foto-somos img {
-    width: 220px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #fff;
-  }
-  
-  .texto-somos {
-    flex: 1;
-    color: #ffffff;
-  }
-  
-  .texto-somos h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-  }
-  
-  .nossajornada, .curiosidades, .galeria {
-    color: #000000;
-    padding: 20px;
-    border-radius: 12px;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
-  }
-  
-  .nossajornada h2,
-  .curiosidades h2,
-  .galeria h2 {
-    margin-bottom: 15px;
-  }
-  
-  .nossajornada ul, .curiosidades ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .nossajornada li,
-  .curiosidades li {
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-    font-size: 1.05rem;
-  }
-  
-  .galeria .grid-galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-  }
-  
-  .galeria img {
-    width: 100%;
-    border-radius: 12px;
-    object-fit: cover;
-  }
-  
-  .grid-galeria img:hover {
-    transform: scale(1.05);
-  }
-
-/* =============== NOVIDADE ================= */
-.novidades h1{
-    justify-self: center;
-    color: #CA1316;
-}
-.novidades {
-    padding: 40px 0;
-    background-color: #000;
-    color: white;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
 }
 
-.novidade {
-    background: #931517;
-    margin-bottom: 20px;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px #000;
-    transition: transform 0.2s;
+.quemsomos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  background-color: #931517;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
 }
 
-.novidade:hover {
-    transform: scale(1.02);
+.foto-somos img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #fff;
+}
+
+.texto-somos {
+  flex: 1;
+  color: #ffffff;
+}
+
+.texto-somos h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.nossajornada, .curiosidades, .galeria {
+  color: #000000;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.nossajornada h2,
+.curiosidades h2,
+.galeria h2 {
+  margin-bottom: 15px;
+}
+
+.nossajornada ul, .curiosidades ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nossajornada li,
+.curiosidades li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  font-size: 1.05rem;
+}
+
+.galeria .grid-galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.galeria img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.grid-galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* =============== NOVIDADES ================= */
+.titulo-novidade {
+  font-size: 2.5rem;
+  color: #ff4d4d;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.icone.vermelho {
+  color: #e63946;
+}
+
+.card .imagem-container {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+.card {
+  background-color: #1c1c1c;
+  border-radius: 15px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.card-link {
+  text-decoration: none; 
+  color: inherit;
+  display: inline-block;
+}
+
+.card-link:hover .card {
+  transform: scale(1.02);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card .icone {
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.card h2 {
+  font-size: 1.4rem;
+  margin: 10px 0 5px;
+  color: #e63946;
+}
+
+.card p {
+  color: #ccc;
+  padding: 0 15px;
+  margin-bottom: 10px;
+}
+
+.card img.imagem-novidade {
+  width: 100%;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 /* =============== RESPONSIVO ================= */
 @media (max-width: 768px) {
-    .menu ul {
-        flex-direction: column;
-        gap: 10px;
-    }
+  .menu ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .cabecalho {
+      flex-direction: column;
+      height: auto;
+  }
+
+  .logo {
+      padding-bottom: 10px;
+  }
 }
