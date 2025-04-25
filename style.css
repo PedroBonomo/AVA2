@@ -90,6 +90,54 @@ footer {
   border: 5px solid #fff;
 }
 
+.nossajornada {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 40px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.imagens-lojas {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  gap: 40px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+
+.imagem-loja {
+  text-align: center;
+  color: black;
+}
+
+.imagem-loja img {
+  width: 250px;
+  height: 250px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.imagem-loja p {
+  margin-top: 10px;
+  font-size: 1rem;
+}  
+
+.imagem-loja h1{
+  flex: 1;
+  color: #000000;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
 .texto-somos {
   flex: 1;
   color: #ffffff;
