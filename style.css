@@ -442,104 +442,48 @@ footer {
 }
 
 /* =============== CONTATOS ================= */
-/* Reset e base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
-body {
-  background-color: #000;
-  color: #fff;
-}
-
-/* Navbar */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #000;
-}
-
-.navbar .logo {
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-}
-
-.menu {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.menu li a {
-  text-decoration: none;
-  color: white;
-  transition: color 0.3s;
-}
-
-.menu li a:hover {
-  color: #d90429;
-}
-
-/* Layout principal */
 .container-contato {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: flex-start;
+  background-color: black; /* já deixa o fundo preto */
   padding: 40px;
-  gap: 40px;
-  flex-wrap: wrap;
 }
 
-/* Quadros informativos */
 .info-contato {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  flex: 1; /* ocupa metade */
+  color: white; /* texto branco para fundo preto */
 }
 
-.quadro {
-  background-color: white;
-  color: black;
-  padding: 20px;
-  width: 200px;
-  border-radius: 10px;
-}
-
-/* Formulário */
 .formulario-contato {
-  background-color: #8B0000;
-  padding: 30px;
-  border-radius: 20px;
-  width: 300px;
-}
-
-.logo-form {
-  display: block;
-  margin: 0 auto 20px;
-  max-width: 100px;
-}
-
-.formulario-contato form {
+  flex: 1; /* outra metade */
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  justify-content: flex-end; /* joga o formulário para a direita */
 }
 
-input, textarea {
-  border: none;
+.form-card {
+  background-color: #222; /* fundo do form um pouco mais claro */
+  padding: 20px;
   border-radius: 10px;
-  padding: 10px;
-  font-size: 14px;
+  width: 80%; /* ou menos, para não ficar colado na borda */
+  color: white;
 }
 
-textarea {
-  resize: none;
-  height: 100px;
+input, textarea, button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background-color: #e91e63;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #c2185b;
 }
