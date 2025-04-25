@@ -291,3 +291,94 @@ footer {
       padding-bottom: 10px;
   }
 }
+
+
+/* =============== Produto ================= */
+
+/* =============== Categorias ================= */
+.menu-categorias {
+  margin: 40px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.categoria {
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  width: 100%; /* Garante que a largura ocupe todo o espaço disponível */
+  text-align: center;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.categoria:hover {
+  transform: none;
+}
+
+.categoria h2 {
+  font-size: 1.8rem;
+  color: #e63946;
+  margin-bottom: 15px;
+  word-wrap: break-word; /* Garante que o texto não ultrapasse o container */
+}
+
+.categoria ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.categoria ul li {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+  width: 50%; 
+}
+
+.categoria ul li:hover {
+  background-color: #444;
+}
+
+.categoria ul li h3 {
+  font-size: 1.4rem;
+  color: #ff4d4d;
+  margin-bottom: 10px;
+}
+
+.categoria ul li p {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.categoria ul li span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .menu-categorias {
+    gap: 15px; /* Ajusta o espaçamento entre os campos */
+  }
+}
+.categoria {
+  padding: 15px; /* Reduz o padding para telas menores */
+}
+
+.categoria ul li {
+  padding: 10px; /* Reduz o padding das opções para telas menores */
+}
