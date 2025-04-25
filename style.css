@@ -62,6 +62,7 @@ footer {
 }
 
 /* =============== SOBRE ================= */
+/* ===== SOBRE - CONTEÚDO GERAL ===== */
 .sobre-conteudo {
   max-width: 1100px;
   margin: 40px auto;
@@ -71,6 +72,7 @@ footer {
   gap: 60px;
 }
 
+/* ===== QUEM SOMOS - SOBRE ===== */
 .quemsomos {
   display: flex;
   flex-wrap: wrap;
@@ -90,54 +92,6 @@ footer {
   border: 5px solid #fff;
 }
 
-.nossajornada {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 40px;
-  background-color: #ffffff;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 0 12px rgba(0,0,0,0.1);
-}
-
-.imagens-lojas {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  text-align: center;
-  gap: 40px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-
-.imagem-loja {
-  text-align: center;
-  color: black;
-}
-
-.imagem-loja img {
-  width: 250px;
-  height: 250px;
-  border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-.imagem-loja p {
-  margin-top: 10px;
-  font-size: 1rem;
-}  
-
-.imagem-loja h1{
-  flex: 1;
-  color: #000000;
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
 .texto-somos {
   flex: 1;
   color: #ffffff;
@@ -148,18 +102,83 @@ footer {
   margin-bottom: 10px;
 }
 
-.nossajornada, .curiosidades, .galeria {
+/* ===== NOSSA JORNADA - SOBRE ===== */
+.nossajornada {
+  background-color: #1c1c1c;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.titulo-jornada {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.cards-jornada {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card-loja {
+  background-color: #2b2b2b;
+  border-radius: 16px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.card-loja:hover {
+  transform: scale(1.05);
+}
+
+.card-loja img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.card-loja h3 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.card-loja p {
+  color: #cccccc;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+/* Responsivo para cards */
+@media (max-width: 768px) {
+  .cards-jornada {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* ===== CURIOSIDADES E GALERIA - SOBRE ===== */
+.curiosidades, .galeria {
   color: #000000;
   padding: 20px;
   border-radius: 12px;
-  background-color: #ffffff;
+  background-color: #931517;
   box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
 
-.nossajornada h2,
 .curiosidades h2,
 .galeria h2 {
   margin-bottom: 15px;
+  color: #ffffff;
 }
 
 .nossajornada ul, .curiosidades ul {
@@ -173,22 +192,135 @@ footer {
   padding: 10px 0;
   border-bottom: 1px solid #eee;
   font-size: 1.05rem;
+  color: #ffffff;
+}
+
+/* ===== DEPOIMENTOS - SOBRE ===== */
+.depoimentos {
+  background: #1c1c1c;
+  color: #000;
+  border-radius: 16px;
+  padding: 40px 30px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  margin-top: 40px;
+}
+
+.depoimentos h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: #ffffff;
+}
+
+.depoimentos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.depoimento {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  text-align: center;
+  font-size: 1rem;
+}
+
+.depoimento p {
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.depoimento span {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* ===== GALERIA - SOBRE ===== */
+
+
+.galeria{
+  background-color: #403d39;
+}
+
+.galeria h2{
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 .galeria .grid-galeria {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
+  gap: 20px;
+  text-align: center;
 }
 
 .galeria img {
   width: 100%;
   border-radius: 12px;
   object-fit: cover;
+  height: auto;
+}
+
+.galeria p{
+  margin-top: 8px;
+  font-weight: bold;
+  color: #ffffff;
 }
 
 .grid-galeria img:hover {
   transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* ===== ANIMAÇÃO FADE-IN - SOBRE ===== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== RESPONSIVO - SOBRE ===== */
+@media (max-width: 768px) {
+  .linha-jornada {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .texto-evolucao {
+    padding: 20px 0;
+  }
+
+  .imagem-loja img {
+    max-width: 200px;
+  }
+
+  .esquerda, .direita {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .foto-somos img {
+    width: 180px;
+    height: 180px;
+  }
 }
 
 /* =============== NOVIDADES ================= */
@@ -242,9 +374,26 @@ footer {
   transform: scale(1.02);
   transition: transform 0.3s ease;
 }
+.card {
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+  transition: transform 0.5s ease, box-shadow 1s ease;
+}
 
 .card:hover {
-  transform: scale(1.05);
+  transform: scale(1.07); /* Crescimento sutil */
+  box-shadow: 0 0 50px 20px rgba(255, 0, 0, 0.15); /* Fumaça suave */
+  animation: fumaçaSuave 2s ease-in-out infinite alternate;
+}
+
+@keyframes fumaçaSuave {
+  0% {
+    box-shadow: 0 0 40px 15px rgba(255, 0, 0, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 60px 25px rgba(255, 0, 0, 0.25);
+  }
 }
 
 .card .icone {
@@ -381,4 +530,51 @@ footer {
 
 .categoria ul li {
   padding: 10px; /* Reduz o padding das opções para telas menores */
+}
+
+/* =============== CONTATOS ================= */
+.container-contato {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: black; /* já deixa o fundo preto */
+  padding: 40px;
+}
+
+.info-contato {
+  flex: 1; /* ocupa metade */
+  color: white; /* texto branco para fundo preto */
+}
+
+.formulario-contato {
+  flex: 1; /* outra metade */
+  display: flex;
+  justify-content: flex-end; /* joga o formulário para a direita */
+}
+
+.form-card {
+  background-color: #222; /* fundo do form um pouco mais claro */
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%; /* ou menos, para não ficar colado na borda */
+  color: white;
+}
+
+input, textarea, button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  background-color: #e91e63;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #c2185b;
 }
