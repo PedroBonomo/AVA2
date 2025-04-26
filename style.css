@@ -536,44 +536,79 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: black; /* já deixa o fundo preto */
+  background-color: black;
   padding: 40px;
+  min-height: 100vh;
+  gap: 50px; /* espaço entre as duas colunas */
+  margin-bottom: 100px;
 }
 
 .info-contato {
-  flex: 1; /* ocupa metade */
-  color: white; /* texto branco para fundo preto */
+  flex: 1;
+  color: white;
 }
 
 .formulario-contato {
-  flex: 1; /* outra metade */
+  flex: 1.2; /* Faz o formulário ocupar mais espaço */
   display: flex;
-  justify-content: flex-end; /* joga o formulário para a direita */
+  justify-content:flex-start; /* Joga o formulário pra direita */
+  margin-bottom: 200px; /* Espaço inferior */
+  
+  
 }
 
-.form-card {
-  background-color: #222; /* fundo do form um pouco mais claro */
-  padding: 20px;
-  border-radius: 10px;
-  width: 80%; /* ou menos, para não ficar colado na borda */
+.card-contato {
+  background-color: #8b0c0c;
+  padding: 80px; 
+  border-radius: 20px;
+  width: 100%; /* ocupa todo o espaço disponível */
+  max-width: 500px; /* limita para não ficar exagerado */
   color: white;
+  justify-content: flex-start;
+  
 }
 
-input, textarea, button {
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 10px;
-  border-radius: 5px;
+.logo-form {
+  border-radius: 100%;
+  width: 100px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+form {
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+input, textarea {
+  width: 98,7%;
+  padding: 12px;
+  border-radius: 8px;
   border: none;
 }
 
+textarea {
+  height: 120px;
+}
+
 button {
-  background-color: #e91e63;
+
+  background-color: #000000;
   color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.8s;
+ 
+
 }
 
 button:hover {
-  background-color: #c2185b;
+  background-color: #000000;
 }
+
+
+
