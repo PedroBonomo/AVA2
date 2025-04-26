@@ -715,6 +715,7 @@ body {
   padding: 40px;
   min-height: 100vh;
   gap: 50px; /* espaço entre as duas colunas */
+  margin-bottom: 100px;
 }
 
 .info-contato {
@@ -723,34 +724,41 @@ body {
 }
 
 .formulario-contato {
-  flex: 2; /* Faz o formulário ocupar mais espaço */
+  flex: 1.2; /* Faz o formulário ocupar mais espaço */
   display: flex;
-  justify-content: flex-end; /* Joga o formulário pra direita */
+  justify-content:flex-start; /* Joga o formulário pra direita */
+  margin-bottom: 200px; /* Espaço inferior */
+  
+  
 }
 
 .card-contato {
   background-color: #8b0c0c;
-  padding: 30px;
+  padding: 80px; 
   border-radius: 20px;
   width: 100%; /* ocupa todo o espaço disponível */
   max-width: 500px; /* limita para não ficar exagerado */
   color: white;
+  justify-content: flex-start;
+  
 }
 
 .logo-form {
+  border-radius: 100%;
   width: 100px;
   margin: 0 auto 20px;
   display: block;
 }
 
 form {
+  margin-bottom: 200px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 30px;
 }
 
 input, textarea {
-  width: 100%;
+  width: 98,7%;
   padding: 12px;
   border-radius: 8px;
   border: none;
@@ -761,15 +769,21 @@ textarea {
 }
 
 button {
-  background-color: #e91e63;
+
+  background-color: #000000;
   color: white;
-  padding: 12px;
+  padding: 15px;
   border: none;
-  border-radius: 8px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.8s;
+ 
+
 }
 
 button:hover {
-  background-color: #c2185b;
+  background-color: #000000;
 }
+
+
+
