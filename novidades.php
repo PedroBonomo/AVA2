@@ -66,8 +66,29 @@ $conn->close();
     </div>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Hamburgueria. Todos os direitos reservados.</p>
-  </footer>
+  <footer class="rodape-criativo">
+  <div class="container-rodape">
+    <div class="info-contato">
+      <h3>McCria’s Hamburgueria</h3>
+      <p>Desde 1990 servindo sabor com história.</p>
+      <p><strong>Endereço:</strong> Rua dos Sabores, 123 - Centro</p>
+      <p><strong>Contato:</strong> (11) 1234-5678</p>
+    </div>
+
+    <div class="redes-sociais">
+      <h4>Nos siga</h4>
+      <div class="icones-sociais">
+        <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="#" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+
+    </div>
+
+    <div class="assinatura">
+      <p>&copy; 2025 McCria’s. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
 </body>
 </html>

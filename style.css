@@ -54,11 +54,68 @@ body {
   font-weight: bold;
 }
 
-footer {
-  text-align: center;
-  background: #000;
+.rodape-criativo {
+  background-color: #1c1c1c;
   color: white;
-  padding: 10px 0;
+  padding: 40px 20px;
+  margin-top: 60px;
+  font-family: 'Arial', sans-serif;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.container-rodape {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.info-contato h3 {
+  font-size: 1.5rem;
+  color: #ff4d4d;
+}
+
+.redes-sociais h4 {
+  margin-bottom: 10px;
+  color: #ff4d4d;
+}
+
+.icones-sociais a {
+  margin-right: 10px;
+  display: inline-block;
+  text-decoration: none; /* remove o sublinhado */
+  color: white; /* força a cor branca no link */
+}
+
+.icones-sociais img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.icones-sociais img:hover {
+  transform: scale(1.2);
+}
+
+.assinatura {
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .container-rodape {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .icones-sociais {
+    justify-content: center;
+  }
 }
 
 /* =============== SOBRE ================= */
