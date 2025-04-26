@@ -723,7 +723,7 @@ body {
 .formulario-contato {
   flex: 1; /* outra metade */
   display: flex;
-  justify-content: flex-end; /* joga o formulário para a direita */
+  justify-content: flelex-end; /* joga o formulário para a direita */
 }
 
 .form-card {
