@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Produtos</title>
     <link rel="stylesheet" href="style.css">
+    <script src="produto.php" defer></script>
 </head>
 <body>
     <header>
@@ -15,7 +16,7 @@
                 </a>
             </div>
             <nav class="menu">
-                <ul>
+                <ul id="menuOptions" class="hidden" aria-hidden="true">
                     <li><a href="index.html">Início</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
                     <li><a href="produtos.html">Produtos</a></li>
@@ -24,13 +25,76 @@
                 </ul>
             </nav>
         </div>
+        <div class="menu-categorias container">
+            <section class="categoria">
+                <h2>Hambúrgueres</h2>
+                <ul>
+                    <li>
+                        <h3>Cheeseburger</h3>
+                        <p>Pão, carne, queijo, alface, tomate e molho especial.</p>
+                        <span>R$ 15,00</span>
+                    </li>
+                    <li>
+                        <h3>Bacon Burger</h3>
+                        <p>Pão, carne, queijo, bacon crocante, alface e molho barbecue.</p>
+                        <span>R$ 18,00</span>
+                    </li>
+                    <li>
+                        <h3>Veggie Burger</h3>
+                        <p>Pão integral, hambúrguer de grão-de-bico, alface, tomate e molho de ervas.</p>
+                        <span>R$ 16,00</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="categoria">
+                <h2>Combos</h2>
+                <ul>
+                    <li>
+                        <h3>Combo Clássico</h3>
+                        <p>Cheeseburger, batata frita e refrigerante.</p>
+                        <span>R$ 25,00</span>
+                    </li>
+                    <li>
+                        <h3>Combo Bacon</h3>
+                        <p>Bacon Burger, onion rings e refrigerante.</p>
+                        <span>R$ 28,00</span>
+                    </li>
+                    <li>
+                        <h3>Combo Veggie</h3>
+                        <p>Veggie Burger, batata frita e suco natural.</p>
+                        <span>R$ 26,00</span>
+                    </li>
+                </ul>
+            </section>
+            <section class="categoria">
+                <h2>Acompanhamentos</h2>
+                <ul>
+                    <li>
+                        <h3>Batata Frita</h3>
+                        <p>Porção de batatas fritas crocantes.</p>
+                        <span>R$ 10,00</span>
+                    </li>
+                    <li>
+                        <h3>Nuggets</h3>
+                        <p>Porção de nuggets de frango.</p>
+                        <span>R$ 12,00</span>
+                    </li>
+                    <li>
+                        <h3>Onion Rings</h3>
+                        <p>Porção de anéis de cebola empanados.</p>
+                        <span>R$ 11,00</span>
+                    </li>
+                </ul>
+            </section>
+        </div>
+       
     </header>
     <main>
-        <section>
-            <!--<h1>Bem-vindo à nossa Hamburgueria!</h1>
+        <!-- <section>
+            !--<h1>Bem-vindo à nossa Hamburgueria!</h1>
             <p>Descubra os melhores hambúrgueres feitos com paixão e ingredientes frescos.</p>
-            <img src="hamburguer.jpg" alt="Hambúrguer delicioso">-->
-        </section>
+            <img src="../hamburguer.jpg" alt="Hambúrguer delicioso">--!
+        </section> -->
     </main>
     <footer>
         <p>&copy; 2025 Hamburgueria. Todos os direitos reservados.</p>

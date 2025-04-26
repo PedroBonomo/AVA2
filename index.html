@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamburgueria - Bem-vindo!</title>
+    <title>McCria's - Bem-vindo!</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <div class="cabecalho container">
@@ -26,14 +27,49 @@
         </div>
     </header>
     <main>
-        <section>
-            <h1>Bem-vindo à nossa Hamburgueria!</h1>
-            <p>Descubra os melhores hambúrgueres feitos com paixão e ingredientes frescos.</p>
-            <img src="hamburguer.jpg" alt="Hambúrguer delicioso">
+        <section class="banner-carrossel">
+            <img src="img/home/banner1.jpeg" alt="Banner 1" class="slide active">
+            <img src="img/home/banner2.jpeg" alt="Banner 2" class="slide">
+            <img src="img/home/banner3.jpeg" alt="Banner 3" class="slide">
+        </section>
+
+        <article class="products">
+                <ul>
+                    <li><a href="produtos.html">
+                        <img src="img/home/hamburguer.jpeg" alt="Hambúrgueres">
+                        <span class="card-title">Hambúrgueres</span>
+                    </a></li>
+                    <li><a href="produtos.html">
+                        <img src="img/home/acompanhamentos.jpeg" alt="Acompanhamentos">
+                        <span class="card-title">Acompanhamentos</span>
+                    </a></li>
+                    <li><a href="produtos.html">
+                        <img src="img/home/combos.jpeg" alt="Combos">
+                        <span class="card-title">Combos</span>
+                    </a></li>
+                </ul>
+        </article>
+
+        <section class="infos">
+            <h2>Informações gerais</h2>
+            <p>Desde 1990, a McCria's une a paixão por hambúrgueres artesanais e momentos especiais, idealizada por cinco amigos de infância: Amine, Caio, Nathã, Pedro e Silvana. Hambúrgueres artesanais preparados com blends exclusivos e ingredientes de alta qualidade, em um ambiente que promove autenticidade e acolhimento.</p>
         </section>
     </main>
     <footer>
         <p>&copy; 2025 Hamburgueria. Todos os direitos reservados.</p>
     </footer>
+
+    <script>
+        const slides = document.querySelectorAll('.banner-carrossel .slide');
+        let current = 0;
+    
+        function showNextSlide() {
+            slides[current].classList.remove('active');
+            current = (current + 1) % slides.length;
+            slides[current].classList.add('active');
+        }
+        setInterval(showNextSlide, 3000);   
+    </script>
+
 </body>
 </html>
