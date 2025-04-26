@@ -54,68 +54,11 @@ body {
   font-weight: bold;
 }
 
-.rodape-criativo {
-  background-color: #1c1c1c;
-  color: white;
-  padding: 40px 20px;
-  margin-top: 60px;
-  font-family: 'Arial', sans-serif;
-  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
-}
-
-.container-rodape {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.info-contato h3 {
-  font-size: 1.5rem;
-  color: #ff4d4d;
-}
-
-.redes-sociais h4 {
-  margin-bottom: 10px;
-  color: #ff4d4d;
-}
-
-.icones-sociais a {
-  margin-right: 10px;
-  display: inline-block;
-  text-decoration: none; /* remove o sublinhado */
-  color: white; /* força a cor branca no link */
-}
-
-.icones-sociais img {
-  width: 30px;
-  height: 30px;
-  transition: transform 0.3s ease;
-}
-
-.icones-sociais img:hover {
-  transform: scale(1.2);
-}
-
-.assinatura {
-  width: 100%;
+footer {
   text-align: center;
-  margin-top: 5px;
-  font-size: 0.9rem;
-  color: #aaa;
-}
-
-@media (max-width: 768px) {
-  .container-rodape {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-
-  .icones-sociais {
-    justify-content: center;
-  }
+  background: #000;
+  color: white;
+  padding: 10px 0;
 }
 
 /* =============== SOBRE ================= */
@@ -496,125 +439,7 @@ body {
   .logo {
       padding-bottom: 10px;
   }
-}
-
-/* ------------- HOME --------------*/
-/*Banner Carrossel*/
-.banner-carrossel {
-  position: relative;
-  height: 700px;
-  width: 100%;
-  overflow: hidden;
-}
-
-.banner-carrossel .slide {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-.banner-carrossel .slide.active {
-  opacity: 1;
-}
-
-.products {
-  background-color: #000;
-  padding: 40px 0;
-}
-
-.products ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  list-style: none;
-}
-
-.products ul li {
-  border-radius: 20px;
-  width: 200px;
-  height: 200px;
-  overflow: hidden;
-  position: relative;
-}
-
-/* Zoom no hover do card */
-.products ul li:hover {
-  transform: scale(1.05);
-}
-
-.proucts ul li a {
-  text-decoration: none;
-  width: 100%;
-  height: 100%;
-  display: block;
-  position: relative;
-}
-
-/*Imagem do card*/
-.products ul li img {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-  object-fit: cover;
-  display: block;
-}
-
-/*Texto do card*/
-.card-title {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  border-radius: 20px;
-  padding: 10px;
-}
-
-/*Mostrar o texto do card ao passar o mouse*/
-.products ul li:hover .card-title {
-  opacity: 1;
-}
-
-.infos {
-  background-color: #931517;
-  width: 80%;
-  margin: 40px auto;
-  padding: 60px 20px;
-  text-align: center;
-  color: white;
-  border-radius: 20px;
-}
-
-.infos:hover {
-  background-color: #CA1316;
-  transition: background-color 0.3s ease;
-  transform: scale(1.05);
-}
-
-.infos h2 {
-  font-size: 28px;
-  margin-bottom: 40px;
-}
-
-.infos p {
-  font-size: 18px;
-}
-
+};
 
 /* =============== Produto ================= */
 
@@ -633,7 +458,7 @@ body {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   padding: 20px;
-  width: 100%; /* Garante que a largura ocupe todo o espaço disponível */
+  width: 100%; 
   text-align: center;
   color: white;
   transition: transform 0.3s ease;
@@ -647,7 +472,7 @@ body {
   font-size: 1.8rem;
   color: #e63946;
   margin-bottom: 15px;
-  word-wrap: break-word; /* Garante que o texto não ultrapasse o container */
+  word-wrap: break-word; /* Text n passa */
 }
 
 .categoria ul {
@@ -695,15 +520,15 @@ body {
 
 @media (max-width: 768px) {
   .menu-categorias {
-    gap: 15px; /* Ajusta o espaçamento entre os campos */
+    gap: 15px; 
   }
 }
 .categoria {
-  padding: 15px; /* Reduz o padding para telas menores */
+  padding: 15px; 
 }
 
 .categoria ul li {
-  padding: 10px; /* Reduz o padding das opções para telas menores */
+  padding: 10px; 
 }
 
 /* =============== CONTATOS ================= */
